@@ -1,0 +1,150 @@
+#backBtn a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+}
+
+.room {
+  border: 3px solid #c3cfd9;
+  background-color: #fff;
+  height: 77vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.room .header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.7rem 1.5rem;
+}
+
+.room .header .avatar {
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.room .header .secPersonName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.room .body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  overflow-y: scroll;
+}
+
+.room .downBtn {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+.room .body .me,
+.room .body .secondPerson {
+  padding: 0.5rem;
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.room .body .me .msg,
+.room .body .secondPerson .msg {
+  margin-right: 1rem;
+}
+
+.room .body .me .time,
+.room .body .secondPerson .time {
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+
+.room .body .me {
+  margin-left: auto;
+  background-color: grey;
+  color: white;
+}
+
+.room .body .me::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -18px;
+  top: 0;
+  border-left: 26px solid grey;
+  border-bottom: 13px solid transparent;
+}
+
+.room .body .secondPerson {
+  background-color: #8fbcb3;
+  color: white;
+}
+
+.room .body .secondPerson::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -18px;
+  top: 0;
+  border-right: 26px solid #8fbcb3;
+  border-bottom: 13px solid transparent;
+}
+
+.room .sender form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.7rem 1.5rem;
+}
+
+.room .sender form input {
+  border: 2px solid #c3cfd9;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 0.7rem;
+  padding: 0 1rem;
+}
+
+.room .sender form button {
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #4d5c6b;
+  background-color: #8fbcb3;
+}
+/*# sourceMappingURL=chat.css.map */
